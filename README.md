@@ -13,20 +13,20 @@ while removing any element from the array.
 
 #DOCS
 
-```Array * Create(void)```
+`Array * Create(void)`
 Creates an instance of the array. No parameter given.
 
-```void Free(Array * a, void (f)(void *))```
+`void Free(Array * a, void (f)(void *))`
 Frees all elements of a given array. The second argument is a function
 that must be able to free the element of the array. It will be applied 
 to all array elements.
 
-`void AddElement(Array * a, void * e)```
+`void AddElement(Array * a, void * e)`
 Adds an element in the end of the array.
 
-`void * GetElement(Array * a, int i);```
+`void * GetElement(Array * a, int i);`
 Returns a reference of the ith item in the array. 
 
-`void DeleteElement(Array * a, int i, void (*f)(void *))```
+`void DeleteElement(Array * a, int i, void (*f)(void *))`
 Removes the ith item in the array and free it using a given function.
 
